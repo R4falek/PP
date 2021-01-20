@@ -1,0 +1,63 @@
+# depslib dependency file v1.0
+1608470526 source:d:\pulpit\testgrafik\main.cpp
+	<graphics.h>
+	<stdio.h>
+	"cJSON.h"
+	"cJSON.c"
+	<unistd.h>
+
+1412414178 d:\pulpit\testgrafik\graphics.h
+	<windows.h>
+	<limits.h>
+	<sstream>
+
+1423850002 d:\pulpit\testgrafik\cjson.h
+
+1423850090 d:\pulpit\testgrafik\cjson.c
+	<string.h>
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<float.h>
+	<limits.h>
+	<ctype.h>
+	"cJSON.h"
+
+1610219221 source:d:\pulpit\projektiss\main.cpp
+	<graphics.h>
+	<stdio.h>
+	"cJSON.h"
+	"cJSON.c"
+	<unistd.h>
+
+1423850002 d:\pulpit\projektiss\cjson.h
+
+1423850090 d:\pulpit\projektiss\cjson.c
+	<string.h>
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<float.h>
+	<limits.h>
+	<ctype.h>
+	"cJSON.h"
+
+1608471219 source:d:\pulpit\projektss\main.cpp
+	<graphics.h>
+	<stdio.h>
+	"cJSON.h"
+	"cJSON.c"
+	<unistd.h>
+
+1423850002 d:\pulpit\projektss\cjson.h
+
+1423850090 d:\pulpit\projektss\cjson.c
+	<string.h>
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<float.h>
+	<limits.h>
+	<ctype.h>
+	"cJSON.h"
+
