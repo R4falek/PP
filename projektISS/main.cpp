@@ -9,7 +9,7 @@
 
 int main()
 {
-    initwindow(okno_dl, okno_sz,"ISS");
+    initwindow(okno_dl, okno_sz,"Pobieranie lokalizacji Miêdzynarodowej Stacji Kosmicznej ISS");
 
     while(1)
     {
