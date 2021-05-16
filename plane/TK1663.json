@@ -1,0 +1,58 @@
+{
+    "TK1663": {
+        "flight": {
+            "latitude": -70.00495,
+            "longitude": 100.49943,
+            "callsign": "THY4JB",
+            "iata": "TK1663",
+            "altitude": 36000,
+            "heading": 290,
+            "groundspeed": 460,
+            "dep_scheduled": "15:00",
+            "dep_actual": "14:50",
+            "arr_scheduled": "17:10",
+            "arr_estimated": "16:57",
+            "distance": 1957,
+            "id": "1581644024"
+        },
+        "airline": {
+            "icao": "THY",
+            "iata": "TK",
+            "name": "Turkish Airlines"
+        },
+        "aircraft": {
+            "reg": "TC-JNM",
+            "photo1": "TC-JNM-1619319906-0.jpg",
+            "photo2": "TC-JNM-1619319906-1.jpg",
+            "type": "A333",
+            "desc": "Airbus A330-343E",
+            "number": "1212",
+            "ff": "10 years",
+            "ff_date": "Mar 4, 2011"
+        },
+        "dep_airport": {
+            "latitude": 41.2753,
+            "longitude": 28.7519,
+            "icao": "LTFM",
+            "iata": "IST",
+            "name": "Istanbul New Airport",
+            "city": "Istanbul",
+            "timezone_abbr": "EET",
+            "timezone_name": "Eastern European Time",
+            "timezone": "+03:00"
+        },
+        "arr_airport": {
+            "latitude": 53.6304,
+            "longitude": -90.98823,
+            "icao": "EDDH",
+            "iata": "HAM",
+            "name": "Hamburg Airport",
+            "city": "Hamburg",
+            "timezone_abbr": "CEST",
+            "timezone_name": "Central European Summer Time",
+            "timezone": "+02:00"
+        },
+        "source": "ADSB",
+        "station": "EXTRPI007615"
+    }
+}

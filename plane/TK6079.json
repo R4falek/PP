@@ -1,0 +1,57 @@
+{
+    "TK6079": {
+        "flight": {
+            "latitude": 47.90882,
+            "longitude": 7.17238,
+            "callsign": "THY6079",
+            "iata": "TK6079",
+            "altitude": 37000,
+            "heading": 110,
+            "groundspeed": 560,
+            "dep_scheduled": "23:20",
+            "dep_actual": "23:07",
+            "arr_estimated": "15:09",
+            "distance": 8171,
+            "id": "1581918400"
+        },
+        "airline": {
+            "icao": "THY",
+            "iata": "TK",
+            "name": "Turkish Airlines"
+        },
+        "aircraft": {
+            "reg": "TC-JJY",
+            "photo1": "TC-JJY-1619308805-0.jpg",
+            "photo2": "TC-JJY-1619308805-1.jpg",
+            "type": "B77W",
+            "desc": "Boeing 777-3F2ER",
+            "number": "44120/1287",
+            "ff": "6 years",
+            "ff_date": "Mar 6, 2015"
+        },
+        "dep_airport": {
+            "latitude": 43.6772,
+            "longitude": -79.6306,
+            "icao": "CYYZ",
+            "iata": "YYZ",
+            "name": "Lester B. Pearson International Airport",
+            "city": "Toronto",
+            "timezone_abbr": "EDT",
+            "timezone_name": "Eastern Daylight Time",
+            "timezone": "-0-4:00"
+        },
+        "arr_airport": {
+            "latitude": 41.2753,
+            "longitude": 28.7519,
+            "icao": "LTFM",
+            "iata": "IST",
+            "name": "Istanbul New Airport",
+            "city": "Istanbul",
+            "timezone_abbr": "EET",
+            "timezone_name": "Eastern European Time",
+            "timezone": "+03:00"
+        },
+        "source": "ADSB",
+        "station": "EXTRPI001117"
+    }
+}
