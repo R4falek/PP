@@ -38,6 +38,6 @@ public class MyPanel extends JPanel {
         for(Bird bird : birds) bird.paint(g2D);
 
         g2D.setColor(Color.WHITE);
-        g2D.drawString(String.valueOf(score), 20, 30);
+        g2D.drawString(String.valueOf(score), 20, 10);
     }
 }

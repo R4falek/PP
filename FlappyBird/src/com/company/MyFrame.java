@@ -12,12 +12,19 @@ public class MyFrame extends JFrame implements KeyListener, ActionListener {
     JSlider slider;
     Timer timer;
     Ga ga;
+    JButton button;
 
-    int x = 0;
+    boolean onlyBest = false;
+    int key = 0;
 
     MyFrame(){
         slider = new MySlider(1, 500, 1, Main.width - 220, 10, 200, 20);
         this.add(slider);
+
+        button = new JButton("Best bird");
+        button.setBounds(10, 10, 90, 20);
+        button.addActionListener(this);
+        this.add(button);
 
         panel = new MyPanel();
         this.add(panel);
@@ -34,7 +41,7 @@ public class MyFrame extends JFrame implements KeyListener, ActionListener {
         timer = new Timer(10, this);
         timer.start();
 
-        ga = new Ga(panel.population);
+        ga = new Ga(panel.population, 10);
     }
 
     @Override
@@ -51,11 +58,24 @@ public class MyFrame extends JFrame implements KeyListener, ActionListener {
             panel.pipes.update();
             panel.score++;
 
+            if(e.getSource() == button) {
+                onlyBest = !onlyBest;
+                ga.saveBest(panel.birds);
+                panel.pipes.restart();
+                panel.birds.clear();
+            }
+
             if(panel.birds.size() == 0){
                 if(panel.score > panel.bestScore) panel.bestScore = panel.score;
                 System.out.println("Best score: "+panel.bestScore+" Score: "+panel.score);
                 panel.score = 0;
-                panel.birds = ga.nextGeneration(panel.savedBirds);
+                if(!onlyBest)
+                    if(panel.savedBirds.size() == 0) {
+                        panel.birds.add(new Bird(ga.bestBirdBrain, false));
+                        for (int j = 0 ; j < panel.population - 1 ; j++) panel.birds.add(new Bird(null, false));
+                    }
+                    else panel.birds = ga.nextGeneration(panel.savedBirds);
+                else panel.birds.add(new Bird(ga.bestBirdBrain, false));
                 panel.savedBirds.clear();
                 panel.pipes.restart();
             }
@@ -65,13 +85,16 @@ public class MyFrame extends JFrame implements KeyListener, ActionListener {
     }
 
     @Override
-    public void keyPressed(KeyEvent e) { if (panel.tap){ for(Bird bird : panel.birds) bird.up(); panel.tap = false; } }
+    public void keyPressed(KeyEvent e) {
+        if (panel.tap){ for(Bird bird : panel.birds) bird.up(); panel.tap = false; }
+        key = e.getKeyCode();
+    }
 
     @Override
     public void keyTyped(KeyEvent e) { }
 
     @Override
-    public void keyReleased(KeyEvent e) { panel.tap = true; }
+    public void keyReleased(KeyEvent e) { panel.tap = true; key = 0; }
 }
 
 class MySlider extends JSlider {
